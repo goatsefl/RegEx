@@ -1,0 +1,11 @@
+
+
+	     Symbol			Meaning
+
+		.	Matches any single character except a newline.
+		^	Matches the start of a string.
+		$	Matches the end of a string.
+		\	Escape character; treats special characters literally.
+		[]	Matches any one of the characters inside the brackets.
+		[^]	Matches any character not inside the brackets.
+

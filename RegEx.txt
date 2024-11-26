@@ -1,0 +1,70 @@
+Category	Pattern	Description
+*************----------********************
+Anchors
+~~~~~~~
+Symbol		Meaning
+------		-------
+^	Matches the start of a string or line.
+$	Matches the end of a string or line.
+\b	Matches a word boundary.
+\B	Matches a position that is not a word boundary.
+*************----------********************
+
+Quantifiers
+~~~~~~~~~~~
+Symbol		Meaning
+------		-------
+*	Matches 0 or more occurrences.
++	Matches 1 or more occurrences.
+?	Matches 0 or 1 occurrence.
+{n}	Matches exactly n occurrences.
+{n,}	Matches n or more occurrences.
+{n,m}	Matches between n and m occurrences.
+*************----------********************
+Character Classes
+~~~~~~~~~~~~~~~~~
+Symbol		Meaning
+------		-------
+[abc]	Matches any of a, b, or c.
+[^abc]	Matches any character except a, b, or c.
+[a-z]	Matches any lowercase letter.
+[A-Z]	Matches any uppercase letter.
+[0-9]	Matches any digit.
+\d	Matches any digit ([0-9]).
+\D	Matches any non-digit.
+\w	Matches any word character (alphanumeric + _).
+\W	Matches any non-word character.
+\s	Matches any whitespace (spaces, tabs, etc.).
+\S	Matches any non-whitespace character.
+************------------********************
+Groups & Capturing
+~~~~~~~~~~~~~~~~~~	
+Symbol		Meaning
+------		-------
+(abc)		Captures and groups abc.
+(?:abc)	Groups without capturing.
+(?<name>abc)	Named capturing group called name.
+\1, \2, ...	Backreference to captured groups.
+****************------------------------*****************
+Assertions
+~~~~~~~~~~
+Symbol		Meaning
+------		-------	
+(?=abc)	Positive lookahead. Ensures abc follows.
+(?!abc)	Negative lookahead. Ensures abc does not follow.
+(?<=abc)	Positive lookbehind. Ensures abc precedes.
+(?<!abc)	Negative lookbehind. Ensures abc does not precede.
+**********---------------------*******************************
+Logical OR	`a	b`
+****************------------------******************************
+Flags
+~~~~~
+Symbol		Meaning
+------		-------	
+/pattern/g	Global search (find all matches).
+/pattern/i	Case-insensitive search.
+/pattern/m	Multi-line mode (^ and $ match start/end of each line).
+/pattern/s	Dot-all mode (. matches newlines).
+/pattern/u	Unicode mode (handles surrogate pairs).
+/pattern/y	Sticky mode (matches only at the exact position in the string).
+*************---------------------*********************-------------*******************
